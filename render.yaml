@@ -1,0 +1,11 @@
+routes:
+  - path: /esgi
+    rewrite: /index.html
+  - path: /photo
+    redirect: https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png
+  - path: /error
+    rewrite: /error/index.html
+  - path: /*
+    rewrite: /index.html
+
+errorPage: /error/index.html
